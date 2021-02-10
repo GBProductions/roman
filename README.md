@@ -11,17 +11,32 @@ _Program converts numbers into Roman Numerals._
 
 ## Specs
 
-Rules:
+# Rules:
 
+Symbol  Value
+I       1
+V       5
+X       10
+L       50
+C       100
+D       500
+M       1,000
+
+Rule #1: Add all numbers together (i.e. II is 2, VI is 6)
+Rule #2: There can not be more than three of the same characters in a row. Switch to subtraction (i.e. 4 is IV not IIII)
+Rule #3: Separate ones, tens, hundreds, and thousands.
+Rule #4: You cannot count higher than 3,999 in Roman Numerals.
+
+
+Describe: romanNumerals()
 
 Test #1
-Describe:
-Test: 
-Expect:
+Test: "When user enters '1', the program will return 'I'."
+Expect(romanNumerals('1')).toEqual('I');
 
 Test #2
-Test: 
-Expect:
+Test: "When user enters '2', the program will return 'II'."
+Expect(romanNumerals('2')).toEqual('II');
 
 Test #3
 Test: 
