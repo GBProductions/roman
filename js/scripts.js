@@ -1,7 +1,27 @@
 function romanNumerals(number) {
-    if (number === 2) {
-        return "II"
-    } else if (number === 1) {
+    if (number === 1) {
         return "I";
+    }   else if (number === 5) {
+        return "V";
+    }   else if (number === 10) {
+        return "X"; 
+    }   else if (number === 50) {
+        return "L";
+    }   else if (number === 100) {
+        return "C";
+    }   else if (number === 500) {
+        return "D";
+    }   else if (number === 1000) {
+        return "M";
     }
 }
+
+
+$(document).ready(function() {
+    $("form#number-submit").submit(function(event) {
+    event.preventDefault();
+    const number = parseInt($("input#number").val());
+    const value = romanNumerals(number)
+    console.log(value)
+    });
+});

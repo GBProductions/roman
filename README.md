@@ -34,6 +34,25 @@ Test #1
 Test: "When user enters '1', the program will return 'I'."
 Expect(romanNumerals('1')).toEqual('I');
 
+    * Test #1.1
+        Test: "When user enters '5', the program will return 'V'."
+        Expect(romanNumerals('5')).toEqual('V');
+     * Test #1.2
+        Test: "When user enters '10', the program will return 'X'."
+        Expect(romanNumerals('10')).toEqual('X');
+    * Test #1.3
+        Test: "When user enters '50', the program will return 'L'."
+        Expect(romanNumerals('50')).toEqual('L');
+    * Test #1.4
+        Test: "When user enters '100', the program will return 'C'."
+        Expect(romanNumerals('100')).toEqual('C');
+    * Test #1.5
+        Test: "When user enters '500', the program will return 'D'."
+        Expect(romanNumerals('500')).toEqual('D');
+    * Test #1.6
+        Test: "When user enters '1000', the program will return 'M'."
+        Expect(romanNumerals('1000')).toEqual('M');
+
 Test #2
 Test: "When user enters '2', the program will return 'II'."
 Expect(romanNumerals('2')).toEqual('II');
